@@ -1,0 +1,33 @@
+import java.util.Scanner;
+    public class PersegiPanjang {
+// Fungsi non-void untuk menghitung luas
+    public static double hitungLuas(double panjang, double lebar) {
+        return panjang * lebar;
+    }
+
+    // Fungsi non-void untuk menghitung keliling
+    public static double hitungKeliling(double panjang, double lebar) {
+        return 2 * (panjang + lebar);
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Input dari pengguna
+        System.out.print("Masukkan panjang: ");
+        double panjang = input.nextDouble();
+
+        System.out.print("Masukkan lebar: ");
+        double lebar = input.nextDouble();
+
+        // Memanggil fungsi dan menyimpan hasilnya
+        double luas = hitungLuas(panjang, lebar);
+        double keliling = hitungKeliling(panjang, lebar);
+
+        // Output hasil
+        System.out.println("Luas: " + luas);
+        System.out.println("Keliling: " + keliling);
+
+        input.close();
+    }
+}
