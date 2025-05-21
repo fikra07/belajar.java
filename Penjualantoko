@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class PenjualanToko {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+    
+            System.out.println("Daftar Barang:");
+            System.out.println("1. Sabun - Rp 5000");
+            System.out.println("2. Sampo - Rp 8000");
+            System.out.println("3. Pasta Gigi - Rp 3000");
+            System.out.println("4. Odol - Rp 2000");
+            System.out.println("5. Shampoo - Rp 10000");
+            System.out.println("6 kondisiouner - Rp 12000");
+            System.out.println("7. Lipstik - Rp 15000");
+            System.out.println("8. Pensil Alis - Rp 5000");
+            System.out.println("9. Maskara - Rp 10000");
+            System.out.println("10. Bedak - Rp 20000");
+    
+            System.out.print("Masukkan kode barang: ");
+            int kode = scanner.nextInt();
+    
+            int harga = 0;
+            switch (kode) {
+                case 1:
+                    harga = 5000;
+                    break;
+                case 2:
+                    harga = 8000;
+                    break;
+                case 3:
+                    harga = 3000;
+                    break;
+                case 4:
+                    harga = 2000;
+                    break;
+                case 5:
+                    harga = 10000;
+                    break;
+                case 6:
+                    harga = 12000;
+                    break;
+                case 7:
+                    harga = 15000;
+                    break;
+                case 8:
+                    harga = 5000;
+                    break;
+                case 9:
+                    harga = 10000;
+                    break;
+                case 10:
+                    harga = 20000;
+                    break;
+            }
+    
+            System.out.print("Masukkan jumlah barang: ");
+            int jumlah = scanner.nextInt();
+    
+            int totalHarga = harga * jumlah;
+    
+            System.out.println("Total harga: Rp " + totalHarga);
+    
+            System.out.print("Masukkan jumlah bayar: ");
+            int bayar = scanner.nextInt();
+    
+            int kembalian = bayar - totalHarga;
+    
+            System.out.println("Kembalian: Rp " + kembalian);
+        }
+    }
